@@ -18,7 +18,7 @@ Sample:
 ### iou_segm
 Description: calculates the pixel-level intersection-over-union (IoU) between a prediction image and a ground truth mask.  
 Usage: instance and semantic segmentation frameworks perform pixel-level predictions for two or more classes. Use this function to compare such predictions against a ground-truth mask. Note that each class' prediction and their respective masks have to be parsed individually.  
-Sample [image](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/iou_segm.png?raw=true)  
+Sample [usage](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/iou_segm.png?raw=true)  
 
 ### mse
 Description: calculates the mean squared error (mse) between two images.  
@@ -37,12 +37,12 @@ Usage: if you work with object detection frameworks offered by detectron2, this 
 ### concatenate_bbs
 Description: concatenates outputs composed by multiple bounding boxes.  
 Usage: use when desiring to combine multiple overlapping bounding boxes (often seen in the output of object detector even after NMS). Note that the concatenation result is given by the score and class of the highest-scoring detection; thus the use of this function is recommend when only one class is presented, or when it is reasonable to merge detection of distinct classes.   
-Sample [image](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/concatenate_bbs.png?raw=True)   
+Sample [usage](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/concatenate_bbs.png?raw=True)   
 
 ### plot_all_bbs
 Description: plots all the detection bounding boxes found in a given image.  
 Usage: useful when debugging the multiple detections of an object detector. Detections of different classes can be distinguished with different colours.    
-Sample [image](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/plot_all_bb.png?raw=True)   
+Sample [usage](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/plot_all_bb.png?raw=True)   
 
 ### read_all_images
 Description: reads all image files of a given format from a folder.  
@@ -57,7 +57,7 @@ Usage: use it to create output directories for different experiments, among othe
 ### create_metadata
 Description: creates a text file with generic metadata from DL models.  
 Usage: given the large number of hyperparameters involved in DL-based training/testing, I created this function to organize the most commonly-used pieces of metadata under the same text file.    
-Sample [image](https://github.com/tunai/DL-helper-functions/blob/master/samples/create_metadata.png?raw=True)   
+Sample [usage](https://github.com/tunai/DL-helper-functions/blob/master/samples/create_metadata.png?raw=True)   
 
 ### iou_bbs
 Description: Returns the IoU between two bounding boxes (third party by [Adrian Rosebrock, 2016](https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)).  
