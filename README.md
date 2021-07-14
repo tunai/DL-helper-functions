@@ -32,16 +32,16 @@ Sample:
 
 ### filter_detectron2_detections
 Description: filters detectron2's bounding-box-based detections.  
-Usage: if you work with object detection frameworks offered by detectron2, this function can help you filter their detection results based on desired classes and detection thresholds, as well as valid y-axis range (so that you can ignore detection in certain parts of the image).  
+Usage: if you work with object detection frameworks offered by detectron2, this function can help you filter their detection results based on desired classes and detection thresholds, as well as valid y-axis range (so that you can ignore detections from certain parts of the image).  
 
 ### concatenate_bbs
 Description: concatenates outputs composed by multiple bounding boxes.  
-Usage: use when desiring to combine multiple overlapping bounding boxes (often seen in the output of object detector even after NMS). Note that the concatenation result is given by the score and class of the highest-scoring detection; thus the use of this function is recommend when only one class is presented, or when it is reasonable to merge detection of distinct classes.   
+Usage: use when desiring to combine multiple overlapping bounding boxes (often seen in the output of object detector even after NMS). Note that the concatenation result is given by the score and class of the highest-scoring detection; thus the use of this function is recommend when only one class is presented, or when it is reasonable to merge detections of distinct classes.   
 Sample [usage](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/concatenate_bbs.png?raw=True)   
 
-### plot_all_bbs
+### plot_all_bb
 Description: plots all the detection bounding boxes found in a given image.  
-Usage: useful when debugging the multiple detections of an object detector. Detections of different classes can be distinguished with different colours.    
+Usage: useful when debugging the multiple detections of an object detector. Detections of different classes can be distinguished with the use of different colours.    
 Sample [usage](https://raw.githubusercontent.com/tunai/DL-helper-functions/master/samples/plot_all_bb.png?raw=True)   
 
 ### read_all_images
